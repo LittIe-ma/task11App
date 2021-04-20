@@ -13,6 +13,7 @@
 		3037EBD3262AA768009B4783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3037EBD1262AA768009B4783 /* Main.storyboard */; };
 		3037EBD5262AA76B009B4783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3037EBD4262AA76B009B4783 /* Assets.xcassets */; };
 		3037EBD8262AA76B009B4783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3037EBD6262AA76B009B4783 /* LaunchScreen.storyboard */; };
+		3037EBE1262AA79D009B4783 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037EBE0262AA79D009B4783 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3037EBD4262AA76B009B4783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3037EBD7262AA76B009B4783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3037EBD9262AA76B009B4783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3037EBE0262AA79D009B4783 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3037EBCB262AA768009B4783 /* AppDelegate.swift */,
 				3037EBCD262AA768009B4783 /* SceneDelegate.swift */,
 				3037EBCF262AA768009B4783 /* ViewController.swift */,
+				3037EBE0262AA79D009B4783 /* TableViewController.swift */,
 				3037EBD1262AA768009B4783 /* Main.storyboard */,
 				3037EBD4262AA76B009B4783 /* Assets.xcassets */,
 				3037EBD6262AA76B009B4783 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				3037EBD0262AA768009B4783 /* ViewController.swift in Sources */,
 				3037EBCC262AA768009B4783 /* AppDelegate.swift in Sources */,
 				3037EBCE262AA768009B4783 /* SceneDelegate.swift in Sources */,
+				3037EBE1262AA79D009B4783 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasu.task11App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasu.task11App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

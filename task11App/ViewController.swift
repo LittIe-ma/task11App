@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet private weak var label: UILabel!
+
+    @IBAction func cancelExit(segue: UIStoryboardSegue) {
+    }
+
+    @IBAction func tapCellExit(segue: UIStoryboardSegue) {
+
+        let table = segue.source as! TableViewController
+
+        self.label.text = table.prefectureText
     }
 
 
