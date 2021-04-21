@@ -13,14 +13,9 @@ class TableViewController: UITableViewController {
 
     private(set) var prefectureText = ""
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         prefectures.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -32,10 +27,15 @@ class TableViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
 
-        if let selected = self.tableView.indexPathForSelectedRow {
-            prefectureText = prefectures[selected.row]
+        switch identifier {
+        case "TapCell":
+            if let selected = tableView.indexPathForSelectedRow {
+                prefectureText = prefectures[selected.row]
+            }
+        default:
+            break
         }
     }
 }
-

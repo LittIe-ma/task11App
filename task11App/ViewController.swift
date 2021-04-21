@@ -15,12 +15,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tapCellExit(segue: UIStoryboardSegue) {
+        let tableViewController = segue.source as! TableViewController
 
-        let table = segue.source as! TableViewController
-
-        self.label.text = table.prefectureText
+        label.text = tableViewController.prefectureText
     }
-
-
 }
-
