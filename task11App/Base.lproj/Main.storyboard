@@ -82,7 +82,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fDW-2t-OtG" kind="unwind" unwindAction="tapCellExitWithSegue:" id="T0Q-Z4-1Ri"/>
+                                    <segue destination="fDW-2t-OtG" kind="unwind" identifier="TapCell" unwindAction="tapCellExitWithSegue:" id="T0Q-Z4-1Ri"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
